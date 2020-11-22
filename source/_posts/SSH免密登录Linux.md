@@ -6,7 +6,8 @@ categories : Linux
 ---
 
 ### 生成SSH密钥
-首先，打开PowerShell，输入ssh-keygen命令，默认一直按回车就可以。完成后，会生成一对私钥和公钥文件(id_rsa、id_rsa.pub)，存放在 %USERPROFILE%/.ssh/ 目录里面。后面要使用的公钥文件为<strong>%USERPROFILE%/.ssh/id_rsa.pub</strong>。
+
+首先，打开PowerShell，输入ssh-keygen命令，默认一直按回车就可以。完成后，会生成一对私钥和公钥文件(id_rsa、id_rsa.pub)，存放在 %USERPROFILE%/.ssh/ 目录里面。后面要使用的公钥文件为 %USERPROFILE%/.ssh/id_rsa.pub</strong>。
 
 {% codeblock lang:bash %}
 PS C:\Users\Wing> ssh-keygen
@@ -25,7 +26,7 @@ The key's randomart image is:
 |. o +. =  o =    |
 |   o .+. . B     |
 |    +..+o o E    |
-|     *+.S. .     |
+|     *+. S. .     |
 |    o +...o      |
 |     o =. .o     |
 |      o.*o ..    |
@@ -35,12 +36,14 @@ PS C:\Users\Wing>
 {% endcodeblock %}
 
 ### 将SSH密钥复制到远程Linux设备
+
 接下来，使用以下命令将公钥复制到Linux设备
 {% codeblock lang:bash %}
-type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
+type $env: USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
 {% endcodeblock %}
 
 ### 测试无密码连接Linux
+
 最后，验证SSH无法密码连接Linux
 {% codeblock lang:bash %}
 PS C:\Users\Wing> ssh root@141.146.246.173
