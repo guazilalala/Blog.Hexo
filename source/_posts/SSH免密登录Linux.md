@@ -39,7 +39,7 @@ PS C:\Users\Wing>
 
 接下来，使用以下命令将公钥复制到Linux设备
 {% codeblock lang:bash %}
-type $env: USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
 {% endcodeblock %}
 
 ### 测试无密码连接Linux
