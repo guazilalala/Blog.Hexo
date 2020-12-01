@@ -73,5 +73,4 @@ tmpfs          tmpfs     7.9G  8.6M  7.9G   1% /run
 tmpfs          tmpfs     7.9G     0  7.9G   0% /sys/fs/cgroup
 /dev/vda2      xfs        36G  2.7G   34G   8% /
 /dev/vdb       ext4      985G  1.6G  933G   1% /data
-tmpfs          tmpfs     1.6G     0  1.6G   0% /run/user/0
-{% endcodeblock %}
+tmpfs          tmpfs     1.6G     0  1.6G   0% /run/user/0{% endcodeblock %}
