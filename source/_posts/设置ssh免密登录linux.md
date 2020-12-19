@@ -15,5 +15,5 @@ wing@MTT-Tangy:~/.ssh$ ssh-keygen -t rsa
 ### 将公钥追加到远端authorized_keys文件
 
 ``` Shell
-wing@MTT-Tangy:~/.ssh$ cat id_rsa.pub >>root@ root@192.168.10.12:.ssh/authorized_keys
+wing@MTT-Tangy:~/.ssh$ cat id_rsa.pub | ssh root@192.168.10.11 "cat >> .ssh/authorized_keys"
 ```

@@ -13,7 +13,7 @@ CentOS 8 默认的包管理工具已经换成了dnf，使用方法基本上和yu
 {% endcodeblock %}
 
 ### 删除yum
-
+ 
 虽然CentOS8还可以使用yum，但是有dnf已经足够了，还是删了吧。
 {% codeblock %}
 [root@wing-centos ~]# dnf -y remove yum yum-metadata-parser
