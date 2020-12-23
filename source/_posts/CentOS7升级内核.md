@@ -1,5 +1,5 @@
 ---
-title: CentOS7升级到最新核
+title: CentOS7升级到最新内核
 date: 2020-11-27 22:55:50
 tags: Linux
 categories: Linux
