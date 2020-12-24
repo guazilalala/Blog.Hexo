@@ -2,7 +2,8 @@
 layout: Linux
 title: Centos提示failed to set locale, defaulting to C
 date: 2020-12-20 00:02:32
-tags:
+tags: Linux
+categories: Linux
 ---
 
 
