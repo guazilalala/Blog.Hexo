@@ -192,6 +192,15 @@ disqus:
 #   tracking_id: UA-108155018-3
 baidu_analytics: c7b61fe1cd6ac6a0909fcfe1e562f210
 
+busuanzi_count:
+  enable: true
+  total_visitors: false
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye
+
 
 # ============================================================= #
 # ====================== Search Services ====================== #
