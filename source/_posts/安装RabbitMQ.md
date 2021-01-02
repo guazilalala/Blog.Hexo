@@ -1,6 +1,6 @@
 ---
 layout: centos
-title: 在Centos8安装RabbitMQ
+title: 在CentOS8安装RabbitMQ
 date: 2021-01-02 20:44:05
 tags: Linux
 categories: Linux
@@ -17,7 +17,7 @@ categories: Linux
 
 ### 添加RabbitMq
 
-下载rpm，到https://packagecloud.io/rabbitmq/rabbitmq-server/packages/el/8/rabbitmq-server-3.8.9-1.el8.noarch.rpm网址下载最后rpm包
+到<https://packagecloud.io/rabbitmq/rabbitmq-server/packages/el/8/rabbitmq-server-3.8.9-1.el8.noarch.rpm>下载最新rpm包
 
 ``` shell
 [root@wing-centos Downloads]# wget --content-disposition https://packagecloud.io/rabbitmq/rabbitmq-server/packages/el/8/rabbitmq-server-3.8.9-1.el8.noarch.rpm/download.rpm
